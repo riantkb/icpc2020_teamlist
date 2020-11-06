@@ -31,13 +31,16 @@ for c in user_columns:
         res_df[c][idx] = getUserSpan(username)
         time.sleep(0.1)
 
-df_html = res_df.to_html(index=False).replace('&lt;', '<').replace('&gt;', '>')
+df_html = res_df.to_html().replace('&lt;', '<').replace('&gt;', '>')
 
 complete_html = """
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.0/js/jquery.tablesorter.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.0/css/theme.default.min.css">
 <title>ICPC 2020 Domestic Teams</title>
 <style>
 table a {text-decoration: none;}
@@ -54,6 +57,11 @@ a:hover.username {text-decoration: none;}
 .user-unrated {color:#000000;}
 .user-admin {color:#C000C0;}
 </style>
+<script>
+$(document).ready(function() {
+    $('.dataframe').tablesorter();
+});
+</script>
 </head>
 <body>
 <p>This information is from <a href="https://jag-icpc.org/?2020%%2FTeams%%2FList">https://jag-icpc.org/?2020%%2FTeams%%2FList</a> (Last Update: %s)</p>

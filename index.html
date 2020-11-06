@@ -3,6 +3,9 @@
 <html>
 <head>
 <meta charset="utf-8" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.0/js/jquery.tablesorter.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.0/css/theme.default.min.css">
 <title>ICPC 2020 Domestic Teams</title>
 <style>
 table a {text-decoration: none;}
@@ -19,13 +22,19 @@ a:hover.username {text-decoration: none;}
 .user-unrated {color:#000000;}
 .user-admin {color:#C000C0;}
 </style>
+<script>
+$(document).ready(function() {
+    $('.dataframe').tablesorter();
+});
+</script>
 </head>
 <body>
-<p>This information is from <a href="https://jag-icpc.org/?2020%2FTeams%2FList">https://jag-icpc.org/?2020%2FTeams%2FList</a> (Last Update: 2020-11-06 06:46:40.568330)</p>
+<p>This information is from <a href="https://jag-icpc.org/?2020%2FTeams%2FList">https://jag-icpc.org/?2020%2FTeams%2FList</a> (Last Update: 2020-11-06 16:05:32.083627)</p>
 <p><b>情報の真偽に対する一切の責任を負いません</b></p>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
+      <th></th>
       <th>チーム名</th>
       <th>学校名</th>
       <th>メンバー 1</th>
@@ -37,6 +46,7 @@ a:hover.username {text-decoration: none;}
   </thead>
   <tbody>
     <tr>
+      <th>0</th>
       <td>ATELIER</td>
       <td>東京農工大学</td>
       <td>毎日進捗</td>
@@ -46,6 +56,7 @@ a:hover.username {text-decoration: none;}
       <td>トトリのアトリエプレイしたことありません</td>
     </tr>
     <tr>
+      <th>1</th>
       <td>nowcow</td>
       <td>東京農工大学</td>
       <td><a href="https://atcoder.jp/users/olphe"><span class="user-orange">olphe</span></a></td>
@@ -55,6 +66,7 @@ a:hover.username {text-decoration: none;}
       <td>うし</td>
     </tr>
     <tr>
+      <th>2</th>
       <td>state_of_the_art</td>
       <td>東北大学</td>
       <td><a href="https://atcoder.jp/users/mugen1337"><span class="user-yellow">mugen1337</span></a></td>
@@ -64,6 +76,7 @@ a:hover.username {text-decoration: none;}
       <td>新規性の塊。新規性しかない</td>
     </tr>
     <tr>
+      <th>3</th>
       <td>give us sociability</td>
       <td>早稲田大学</td>
       <td><a href="https://atcoder.jp/users/KKT89"><span class="user-blue">KKT89</span></a></td>
@@ -73,6 +86,7 @@ a:hover.username {text-decoration: none;}
       <td>社会性、あります</td>
     </tr>
     <tr>
+      <th>4</th>
       <td>Ramen as a Service</td>
       <td>早稲田大学</td>
       <td><a href="https://atcoder.jp/users/m_tsubasa"><span class="user-yellow">m_tsubasa</span></a></td>
@@ -82,6 +96,7 @@ a:hover.username {text-decoration: none;}
       <td>早稲田のラーメン、食べにきてね！</td>
     </tr>
     <tr>
+      <th>5</th>
       <td>The atama</td>
       <td>東京大学</td>
       <td><a href="https://atcoder.jp/users/Mister"><span class="user-orange">mister</span></a></td>
@@ -91,6 +106,7 @@ a:hover.username {text-decoration: none;}
       <td>実力不足の分は、まあ、有り余る地頭でカバーしたいと思っております。</td>
     </tr>
     <tr>
+      <th>6</th>
       <td>UHISHIRO</td>
       <td>早稲田大学</td>
       <td><a href="https://atcoder.jp/users/siro53"><span class="user-cyan">siro53</span></a></td>
@@ -100,15 +116,17 @@ a:hover.username {text-decoration: none;}
       <td>ウヒヒ・・・</td>
     </tr>
     <tr>
+      <th>7</th>
       <td>KOMOREBI</td>
       <td>東京大学</td>
       <td><a href="https://atcoder.jp/users/noimi"><span class="user-orange">noimi</span></a></td>
-      <td>sharppencil</td>
+      <td>sharppenciI</td>
       <td><a href="https://atcoder.jp/users/jell"><span class="user-yellow">jell</span></a></td>
       <td></td>
       <td>駒場キャンパスのカフェテリアこもれび、使ってね☆</td>
     </tr>
     <tr>
+      <th>8</th>
       <td>BandsmanAlgon</td>
       <td>筑波大学</td>
       <td><a href="https://atcoder.jp/users/algon"><span class="user-blue">algon</span></a></td>
@@ -118,6 +136,7 @@ a:hover.username {text-decoration: none;}
       <td>ボーカル募集</td>
     </tr>
     <tr>
+      <th>9</th>
       <td>harahara</td>
       <td>千葉大学</td>
       <td><a href="https://atcoder.jp/users/stoq"><span class="user-blue">stoq</span></a></td>
@@ -127,6 +146,7 @@ a:hover.username {text-decoration: none;}
       <td>haraharaさせます</td>
     </tr>
     <tr>
+      <th>10</th>
       <td>onions</td>
       <td>大阪大学</td>
       <td>jupiro</td>
@@ -136,6 +156,7 @@ a:hover.username {text-decoration: none;}
       <td>プログラミングなんもわからん</td>
     </tr>
     <tr>
+      <th>11</th>
       <td>Aobayama_sugarstep</td>
       <td>東北大学</td>
       <td><a href="https://atcoder.jp/users/mine691"><span class="user-cyan">mine691</span></a></td>
@@ -145,6 +166,7 @@ a:hover.username {text-decoration: none;}
       <td>青葉山のドロップアウトしてないほうです</td>
     </tr>
     <tr>
+      <th>12</th>
       <td>noborito290yen</td>
       <td>明治大学</td>
       <td><a href="https://atcoder.jp/users/mint"><span class="user-blue">mint</span></a></td>
@@ -154,6 +176,7 @@ a:hover.username {text-decoration: none;}
       <td>大学から登戸まで130円で行けます お得</td>
     </tr>
     <tr>
+      <th>13</th>
       <td>Whiteboard</td>
       <td>京都大学</td>
       <td><a href="https://atcoder.jp/users/kanra824"><span class="user-blue">kanra824</span></a></td>
@@ -163,6 +186,7 @@ a:hover.username {text-decoration: none;}
       <td>人間枠での優勝を目指しています</td>
     </tr>
     <tr>
+      <th>14</th>
       <td>genius_chimpanzees</td>
       <td>大阪工業大学</td>
       <td>アイちゃん</td>
@@ -172,6 +196,7 @@ a:hover.username {text-decoration: none;}
       <td>ｳｯｷｰ!ｷｷｰ!ｳｷｳｷ!ｷｷｷｰ!</td>
     </tr>
     <tr>
+      <th>15</th>
       <td>SiMoJappy</td>
       <td>東京大学</td>
       <td><a href="https://atcoder.jp/users/simkaren"><span class="user-yellow">simkaren</span></a></td>
@@ -181,6 +206,7 @@ a:hover.username {text-decoration: none;}
       <td>アジア地区大会(´イωク｀)ε-(/･ω･)/三┏( ^o^)┛٩(・ω・)วlet's go!</td>
     </tr>
     <tr>
+      <th>16</th>
       <td>san_nin_baori</td>
       <td>東京都立大学</td>
       <td><a href="https://atcoder.jp/users/kya"><span class="user-blue">kya</span></a></td>
@@ -190,6 +216,7 @@ a:hover.username {text-decoration: none;}
       <td>人生ピンチ</td>
     </tr>
     <tr>
+      <th>17</th>
       <td>good_yamikin</td>
       <td>東京工業大学</td>
       <td>baton</td>
@@ -199,6 +226,7 @@ a:hover.username {text-decoration: none;}
       <td>闇金です。闇金ですが、良い闇金です。</td>
     </tr>
     <tr>
+      <th>18</th>
       <td>Heno_World</td>
       <td>京都大学</td>
       <td><a href="https://atcoder.jp/users/heno239"><span class="user-red">heno239</span></a></td>
@@ -208,6 +236,7 @@ a:hover.username {text-decoration: none;}
       <td>tempura0224さんと愉快な仲間たち</td>
     </tr>
     <tr>
+      <th>19</th>
       <td>potqmochi</td>
       <td>東京工業大学</td>
       <td><a href="https://atcoder.jp/users/potato167"><span class="user-blue">potato167</span></a></td>
@@ -217,6 +246,7 @@ a:hover.username {text-decoration: none;}
       <td>すやすや</td>
     </tr>
     <tr>
+      <th>20</th>
       <td>oraCle_MaChine</td>
       <td>東京大学</td>
       <td><a href="https://atcoder.jp/users/carrot46"><span class="user-yellow">carrot46</span></a></td>
@@ -226,6 +256,7 @@ a:hover.username {text-decoration: none;}
       <td>天啓アルゴリズムが得意です</td>
     </tr>
     <tr>
+      <th>21</th>
       <td>Flip-Flop C</td>
       <td>中央大学</td>
       <td><a href="https://atcoder.jp/users/ntk_ta01"><span class="user-cyan">ntk_ta01</span></a></td>
@@ -235,6 +266,7 @@ a:hover.username {text-decoration: none;}
       <td>SS3AのFlip Flopがチームソングです</td>
     </tr>
     <tr>
+      <th>22</th>
       <td>PWMtree</td>
       <td>東京大学</td>
       <td><a href="https://atcoder.jp/users/holeguma"><span class="user-yellow">holeguma</span></a></td>
@@ -244,6 +276,7 @@ a:hover.username {text-decoration: none;}
       <td>Google検索をしない！(素振り)</td>
     </tr>
     <tr>
+      <th>23</th>
       <td>NITTC_overslept</td>
       <td>東京工業高等専門学校</td>
       <td><a href="https://atcoder.jp/users/car4ryu"><span class="user-gray">car4ryu</span></a></td>
@@ -253,6 +286,7 @@ a:hover.username {text-decoration: none;}
       <td>優勝したら起業します！</td>
     </tr>
     <tr>
+      <th>24</th>
       <td>ZeroDistance</td>
       <td>都立産業技術高等専門学校</td>
       <td>@Lafolia13</td>
@@ -262,6 +296,7 @@ a:hover.username {text-decoration: none;}
       <td>レイ・ディスタンスの新曲待ってます！</td>
     </tr>
     <tr>
+      <th>25</th>
       <td>___ KING ___</td>
       <td>東京大学</td>
       <td><a href="https://atcoder.jp/users/yutaka1999"><span class="user-red">yutaka1999</span></a></td>
@@ -271,6 +306,7 @@ a:hover.username {text-decoration: none;}
       <td>***king ***</td>
     </tr>
     <tr>
+      <th>26</th>
       <td>SPJ</td>
       <td>東京大学</td>
       <td><a href="https://atcoder.jp/users/Kite_kuma"><span class="user-yellow">Kite_kuma</span></a></td>
@@ -280,6 +316,7 @@ a:hover.username {text-decoration: none;}
       <td>パチンコ勝負なら負けないぜ！</td>
     </tr>
     <tr>
+      <th>27</th>
       <td>yakiniku_labo</td>
       <td>早稲田大学</td>
       <td><a href="https://atcoder.jp/users/suzuken_w"><span class="user-blue">suzuken_w</span></a></td>
@@ -289,6 +326,7 @@ a:hover.username {text-decoration: none;}
       <td>この焼肉はohuton_laboからのサービスだから、まず食べて落ち着いて欲しい。</td>
     </tr>
     <tr>
+      <th>28</th>
       <td>shop_one</td>
       <td>明治大学</td>
       <td><a href="https://atcoder.jp/users/shop_one"><span class="user-cyan">shop_one</span></a></td>
@@ -298,6 +336,7 @@ a:hover.username {text-decoration: none;}
       <td>shop_oneです</td>
     </tr>
     <tr>
+      <th>29</th>
       <td>tsutaj</td>
       <td>北海道大学</td>
       <td>@rsk0315_h4x</td>
@@ -307,6 +346,7 @@ a:hover.username {text-decoration: none;}
       <td>tsutaj に勝つ！（素振り）</td>
     </tr>
     <tr>
+      <th>30</th>
       <td>KeiKuroUsa</td>
       <td>岐阜大学</td>
       <td><a href="https://atcoder.jp/users/kurokoji"><span class="user-green">kurokoji</span></a></td>
@@ -316,15 +356,17 @@ a:hover.username {text-decoration: none;}
       <td>岐阜大学からは初めてのICPC参戦です</td>
     </tr>
     <tr>
+      <th>31</th>
       <td>chihomin</td>
       <td>東京大学</td>
       <td><a href="https://atcoder.jp/users/eSeF"><span class="user-blue">eSeF</span></a></td>
       <td><a href="https://atcoder.jp/users/potate"><span class="user-blue">potate</span></a></td>
-      <td>fairly_lettuce</td>
+      <td>fairy_lettuce</td>
       <td></td>
       <td>都会こわぃ ( > _ < )</td>
     </tr>
     <tr>
+      <th>32</th>
       <td>Poyashi</td>
       <td>東京工業大学</td>
       <td><a href="https://atcoder.jp/users/noshi91"><span class="user-red">noshi91</span></a></td>
@@ -334,6 +376,7 @@ a:hover.username {text-decoration: none;}
       <td></td>
     </tr>
     <tr>
+      <th>33</th>
       <td>Genius Takano -Forever-</td>
       <td>明治大学</td>
       <td>workshop_one</td>
@@ -343,6 +386,7 @@ a:hover.username {text-decoration: none;}
       <td>shop_one かもしれません</td>
     </tr>
     <tr>
+      <th>34</th>
       <td>appeared</td>
       <td>明石工業高等専門学校</td>
       <td><a href="https://atcoder.jp/users/asdf1"><span class="user-blue">asdf1</span></a></td>
@@ -352,6 +396,7 @@ a:hover.username {text-decoration: none;}
       <td>でっけーねこ撫でてぇ</td>
     </tr>
     <tr>
+      <th>35</th>
       <td>Aobayama_dropout</td>
       <td>東北大学</td>
       <td><a href="https://atcoder.jp/users/kotatsugame"><span class="user-orange">kotatsugame</span></a></td>
@@ -361,6 +406,7 @@ a:hover.username {text-decoration: none;}
       <td>青葉山のドロップアウトしているほうです</td>
     </tr>
     <tr>
+      <th>36</th>
       <td>sinyuri157yen</td>
       <td>お明治大学</td>
       <td>わたくし</td>
@@ -370,6 +416,7 @@ a:hover.username {text-decoration: none;}
       <td>新百合ヶ丘。それはお嬢様が住まう街ですわ。メカじいや、滅びのバーストストリームを放ちなさい</td>
     </tr>
     <tr>
+      <th>37</th>
       <td>a0i umi</td>
       <td>東京工業大学</td>
       <td>0214sh7</td>
@@ -379,6 +426,7 @@ a:hover.username {text-decoration: none;}
       <td>海の中から外の様子を伺っています</td>
     </tr>
     <tr>
+      <th>38</th>
       <td>seica on the border</td>
       <td>埼玉大学</td>
       <td><a href="https://atcoder.jp/users/seica"><span class="user-yellow">seica</span></a></td>
@@ -388,6 +436,7 @@ a:hover.username {text-decoration: none;}
       <td>今年は違う名前にしようとしたけどrateがonしてしまった。</td>
     </tr>
     <tr>
+      <th>39</th>
       <td>niu_mogu_mogu</td>
       <td>鈴鹿高専</td>
       <td><a href="https://atcoder.jp/users/niuez"><span class="user-yellow">niuez</span></a></td>
@@ -397,6 +446,7 @@ a:hover.username {text-decoration: none;}
       <td>はやいぞい全部抜く</td>
     </tr>
     <tr>
+      <th>40</th>
       <td>a0i umi</td>
       <td>東京工業大学</td>
       <td>0214sh7</td>
@@ -406,6 +456,7 @@ a:hover.username {text-decoration: none;}
       <td>海の中から外の様子を伺っています</td>
     </tr>
     <tr>
+      <th>41</th>
       <td>osaka_tmp</td>
       <td>大阪大学</td>
       <td><a href="https://atcoder.jp/users/pelno"><span class="user-cyan">pelno</span></a></td>
@@ -415,6 +466,7 @@ a:hover.username {text-decoration: none;}
       <td>所詮我々はtmpファイルに過ぎない</td>
     </tr>
     <tr>
+      <th>42</th>
       <td>approx110</td>
       <td>東京工業大学</td>
       <td><a href="https://atcoder.jp/users/stretchybox"><span class="user-blue">stretchybox</span></a></td>
@@ -424,6 +476,7 @@ a:hover.username {text-decoration: none;}
       <td>(順位は)110…弱でしょうね</td>
     </tr>
     <tr>
+      <th>43</th>
       <td>AKS51</td>
       <td>東京工業大学</td>
       <td><a href="https://atcoder.jp/users/hishimochi"><span class="user-cyan">hishimochi</span></a></td>
@@ -433,6 +486,7 @@ a:hover.username {text-decoration: none;}
       <td>東京工業大学に誕生したアイドルユニットAKS51。チームAリーダーreyu、チームKリーダーhishimochi、チームSリーダーhijiki51</td>
     </tr>
     <tr>
+      <th>44</th>
       <td>MATHKU</td>
       <td>京都大学</td>
       <td><a href="https://atcoder.jp/users/shakayami"><span class="user-blue">shakayami</span></a></td>
@@ -442,6 +496,7 @@ a:hover.username {text-decoration: none;}
       <td></td>
     </tr>
     <tr>
+      <th>45</th>
       <td>GIP</td>
       <td>北海道大学</td>
       <td><a href="https://atcoder.jp/users/Ganmodokix"><span class="user-blue">ganmodokix</span></a></td>
@@ -451,6 +506,7 @@ a:hover.username {text-decoration: none;}
       <td></td>
     </tr>
     <tr>
+      <th>46</th>
       <td>HiCoder</td>
       <td>広島大学</td>
       <td>@オータム</td>
@@ -460,6 +516,7 @@ a:hover.username {text-decoration: none;}
       <td>今年は横浜行けるといいね</td>
     </tr>
     <tr>
+      <th>47</th>
       <td>CEDARY</td>
       <td>山梨大学</td>
       <td><a href="https://atcoder.jp/users/xuelei"><span class="user-blue">xuelei</span></a></td>
@@ -469,6 +526,7 @@ a:hover.username {text-decoration: none;}
       <td>黒糖タピオカ</td>
     </tr>
     <tr>
+      <th>48</th>
       <td>Cutting Tree</td>
       <td>福井大学</td>
       <td><a href="https://atcoder.jp/users/sbite"><span class="user-cyan">sbite</span></a></td>
@@ -478,6 +536,7 @@ a:hover.username {text-decoration: none;}
       <td>枝刈りしてでも通す</td>
     </tr>
     <tr>
+      <th>49</th>
       <td>Cutting Tree</td>
       <td>福井大学</td>
       <td><a href="https://atcoder.jp/users/sbite"><span class="user-cyan">sbite</span></a></td>
@@ -487,6 +546,7 @@ a:hover.username {text-decoration: none;}
       <td>枝刈りしてでも通す</td>
     </tr>
     <tr>
+      <th>50</th>
       <td>QWE_QWE</td>
       <td>東京大学</td>
       <td><a href="https://atcoder.jp/users/Rubikun"><span class="user-orange">Rubikun</span></a></td>
@@ -496,6 +556,7 @@ a:hover.username {text-decoration: none;}
       <td>Rubikunキャリー</td>
     </tr>
     <tr>
+      <th>51</th>
       <td>Antitled</td>
       <td>慶應義塾大学</td>
       <td><a href="https://atcoder.jp/users/tute7627"><span class="user-yellow">tute7627</span></a></td>
@@ -505,6 +566,7 @@ a:hover.username {text-decoration: none;}
       <td>弊の他チーム情報を募集しています</td>
     </tr>
     <tr>
+      <th>52</th>
       <td>FUNCoder</td>
       <td>公立はこだて未来大学</td>
       <td><a href="https://atcoder.jp/users/ttkkggww"><span class="user-cyan">ttkkggww</span></a></td>
@@ -514,15 +576,17 @@ a:hover.username {text-decoration: none;}
       <td>がんばります！！</td>
     </tr>
     <tr>
+      <th>53</th>
       <td>JohoCommunication</td>
       <td>東京工業大学</td>
-      <td><a href="https://atcoder.jp/users/ninja"><span class="user-unrated">ninja</span></a></td>
+      <td><a href="https://atcoder.jp/users/ninja7"><span class="user-yellow">ninja7</span></a></td>
       <td>hukuda222</td>
       <td><a href="https://atcoder.jp/users/Osa_Pyon"><span class="user-green">Osa_Pyon</span></a></td>
       <td></td>
       <td>情報通信系の略称はJC 異論は認めん</td>
     </tr>
     <tr>
+      <th>54</th>
       <td>atraS</td>
       <td>東京工業大学</td>
       <td><a href="https://atcoder.jp/users/SSlime"><span class="user-yellow">SSlime</span></a></td>
@@ -532,6 +596,7 @@ a:hover.username {text-decoration: none;}
       <td>にぶたんしか勝たん</td>
     </tr>
     <tr>
+      <th>55</th>
       <td>choKOdai</td>
       <td>慶應義塾大学</td>
       <td><a href="https://atcoder.jp/users/centipede_human"><span class="user-blue">centipede_human</span></a></td>
@@ -539,6 +604,36 @@ a:hover.username {text-decoration: none;}
       <td><a href="https://atcoder.jp/users/taki0711"><span class="user-green">taki0711</span></a></td>
       <td></td>
       <td>弊の他チーム情報①</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>Naphi</td>
+      <td>電気通信大学</td>
+      <td><a href="https://atcoder.jp/users/nasatame"><span class="user-blue">nasatame</span></a></td>
+      <td><a href="https://atcoder.jp/users/phocom"><span class="user-yellow">phocom</span></a></td>
+      <td><a href="https://atcoder.jp/users/firiexp"><span class="user-yellow">firiexp</span></a></td>
+      <td></td>
+      <td>それぞれ ゲームAI マラソン タイピング を担当します</td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td>atraS</td>
+      <td>東京工業大学</td>
+      <td><a href="https://atcoder.jp/users/SSlime"><span class="user-yellow">SSlime</span></a></td>
+      <td><a href="https://atcoder.jp/users/trasta"><span class="user-cyan">trasta</span></a></td>
+      <td><a href="https://atcoder.jp/users/arahi10"><span class="user-cyan">arahi10</span></a></td>
+      <td></td>
+      <td>にぶたんしか勝たん</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>naganegi</td>
+      <td>大阪大学</td>
+      <td><a href="https://atcoder.jp/users/snow39"><span class="user-yellow">snow39</span></a></td>
+      <td><a href="https://atcoder.jp/users/Dente"><span class="user-blue">Dente</span></a></td>
+      <td><a href="https://atcoder.jp/users/Pro_ktmr"><span class="user-yellow">Pro_ktmr</span></a></td>
+      <td><a href="https://atcoder.jp/users/Badlylucky"><span class="user-cyan">Badlylucky</span></a></td>
+      <td></td>
     </tr>
   </tbody>
 </table>
