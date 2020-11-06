@@ -9,9 +9,11 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
+  update_and_push:
 
     runs-on: ubuntu-latest
+    env:
+      REPO: https://${{github.actor}}:${{secrets.GITHUB_TOKEN}}@github.com/${{github.repository}}.git
 
     steps:
     - uses: actions/checkout@v2
@@ -27,9 +29,7 @@ jobs:
       run: python run.py
     - name: push Result
       run: |
-        git config user.name ${NAME}
-        git config user.email ${EMAIL}
-        git remote set-url origin https://${NAME}:${{ secrets.GITHUB_PASS }}@github.com/${NAME}/${REPO}
-        git checkout master
-        git add index.html
-        git commit -m "update index.html by github actions"
+        git config --global user.email "workflow@example.com"
+        git config --global user.name "workflow user"
+        git add .
+        git commit -m 'update index.html by Github Actions' && git push ${REPO} master || true
