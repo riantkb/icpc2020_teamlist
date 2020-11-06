@@ -56,6 +56,7 @@ a:hover.username {text-decoration: none;}
 .user-gray {color:#808080;}
 .user-unrated {color:#000000;}
 .user-admin {color:#C000C0;}
+.dataframe {font-size: 14px; }
 </style>
 <script>
 $(document).ready(function() {
