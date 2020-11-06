@@ -25,3 +25,11 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Run
       run: python run.py
+    - name: push Result
+      run: |
+        git config user.name ${NAME}
+        git config user.email ${EMAIL}
+        git remote set-url origin https://${NAME}:${{ secrets.GITHUB_PASS }}@github.com/${NAME}/${REPO}
+        git checkout master
+        git add index.html
+        git commit -m "update index.html by github actions"
