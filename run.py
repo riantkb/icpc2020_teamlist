@@ -3,7 +3,6 @@ import pandas
 from bs4 import BeautifulSoup
 import time
 import datetime
-from tqdm import tqdm
 
 valid_chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_'
 
@@ -28,7 +27,7 @@ df = pandas.read_html(url)[1].fillna('')[5:].reset_index(drop=True)
 res_df = df.copy()
 user_columns = ['メンバー 1', 'メンバー2', 'メンバー3', 'コーチ，ココーチ']
 for c in user_columns:
-    for idx, username in tqdm(enumerate(df[c])):
+    for idx, username in enumerate(df[c]):
         res_df[c][idx] = getUserSpan(username)
         time.sleep(0.1)
 
