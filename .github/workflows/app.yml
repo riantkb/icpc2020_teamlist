@@ -3,10 +3,10 @@
 
 name: Python application
 on:
-  schedule:
-    - cron:  '0 0 */7 * *'
-#   push:
-#     branches: [ master ]
+#   schedule:
+#     - cron:  '0 0 */7 * *'
+  push:
+    branches: [ master ]
 
 jobs:
   update_and_push:
